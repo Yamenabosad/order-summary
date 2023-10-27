@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: #d6e1ff;
+  background-image: url(images/pattern-background-desktop.svg);
+
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  background-color: var(--Very-pale-blue);
+  width: 450px;
+  border-radius: 20px;
+  margin: 30px auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 10px 15px 50px;
+}
+img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+.contant {
+  text-align: center;
+  margin-top: 30px;
+  width: 100%;
+}
+h2 {
+  color: var(--Dark-blue);
+  font-size: 30px;
+  font-weight: 900;
+}
+p {
+  color: var(--Desaturated-blue);
+  margin: 20px 50px 40px;
+  font-weight: 500;
+}
+.fottor {
+  display: inline-flex;
+  align-items: center;
+}
+.fottor img {
+  width: 50px;
+  margin-left: 70px;
+}
+ul li:first-child {
+  color: var(--Dark-blue);
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+ul li:last-child {
+  color: var(--Desaturated-blue);
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 20px;
+}
+article {
+  margin-left: 90px;
+  text-decoration: underline;
+  color: var(--Bright-blue);
+  font-weight: 700;
+}
+article:hover {
+  text-decoration: none;
+  opacity: 0.7;
+  cursor: pointer;
+}
+.bottom {
+  text-align: center;
+  background-color: var(--Bright-blue);
+  margin: 40px 40px 10px;
+  padding: 20px;
+  border-radius: 10px;
+  color: var(--Very-pale-blue);
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 15px 7px;
+  font-weight: 900;
+}
+.bottom:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.order {
+  text-align: center;
+  color: var(--Desaturated-blue);
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: 900;
+}
+.order:hover {
+  cursor: pointer;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
